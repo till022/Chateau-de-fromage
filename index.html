@@ -876,7 +876,7 @@ ul { list-style: none; }
 
             <div class="about__image-wrap fade-in">
                 <img
-                    src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80"
+                    src="images/about.jpg"
                     alt="Handwerk bei der Käseherstellung"
                     loading="lazy"
                 >
@@ -926,7 +926,7 @@ ul { list-style: none; }
                     <path d="M18 8v2M18 26v2M8 18h2M26 18h2"/>
                 </svg>
                 <h3 class="feature-card__title">Frisch hergestellt</h3>
-                <p class="feature-card__desc">Immer in kleinen Mengen, um weder Milch noch Zeit zu verschwenden und das Endprodukt zu perfektionieren!</p>
+                <p class="feature-card__desc">Immer in kleinen Mengen um weder Milch noch Zeit zu verschwenden und das Endprodukt zu perfektionieren!</p>
             </div>
 
             <div class="feature-card fade-in delay-1">
@@ -975,7 +975,7 @@ ul { list-style: none; }
 
         <p class="process__intro fade-in">
             Die Herstellung von Mozzarella basiert auf dem Zusammenspiel von Temperatur,
-            Säure und sorgfältiger Handarbeit - Schritt für Schritt.
+            Säure und sorgfältiger Handarbeit — Schritt für Schritt.
         </p>
 
         <div class="process__grid">
@@ -985,7 +985,7 @@ ul { list-style: none; }
                 <div class="step__num">01</div>
                 <p class="step__label">Vorbereitung</p>
                 <h3 class="step__title">Milch &amp; Zitronensäure</h3>
-                <p class="step__desc">Pasteurisierte Vollmilch wird in einen Topf gegeben. Zitronensäure wird in Wasser aufgelöst und zur Milch hinzugefügt, dadurch steigt der Säuregehalt, was für die spätere Gerinnung entscheidend ist.</p>
+                <p class="step__desc">Pasteurisierte Vollmilch wird in einen Topf gegeben. Zitronensäure wird in Wasser aufgelöst und zur Milch hinzugefügt — dadurch steigt der Säuregehalt, was für die spätere Gerinnung entscheidend ist.</p>
             </div>
 
             <!-- 02 -->
@@ -1062,7 +1062,7 @@ ul { list-style: none; }
 
             <div class="gallery__item fade-in">
                 <img
-                    src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80"
+                    src="images/gallery-1.jpg"
                     alt="Frischer Mozzarella"
                     loading="lazy"
                 >
@@ -1070,7 +1070,7 @@ ul { list-style: none; }
 
             <div class="gallery__item fade-in delay-1">
                 <img
-                    src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80"
+                    src="images/gallery-2.jpg"
                     alt="Frische Milch"
                     loading="lazy"
                 >
@@ -1078,7 +1078,7 @@ ul { list-style: none; }
 
             <div class="gallery__item fade-in delay-2">
                 <img
-                    src="https://images.unsplash.com/photo-1486297847374-9b5090313737?auto=format&fit=crop&w=800&q=80"
+                    src="images/gallery-3.jpg"
                     alt="Handwerk Käserei"
                     loading="lazy"
                 >
@@ -1086,7 +1086,7 @@ ul { list-style: none; }
 
             <div class="gallery__item fade-in delay-3">
                 <img
-                    src="https://images.unsplash.com/photo-1518977676395-8bf2a76de126?auto=format&fit=crop&w=800&q=80"
+                    src="images/gallery-4.jpg"
                     alt="Käseplatte"
                     loading="lazy"
                 >
@@ -1094,7 +1094,7 @@ ul { list-style: none; }
 
             <div class="gallery__item fade-in delay-4">
                 <img
-                    src="https://images.unsplash.com/photo-1601924582975-4c5f05b5e5ba?auto=format&fit=crop&w=800&q=80"
+                    src="images/gallery-5.jpg"
                     alt="Mozzarella in Salzlake"
                     loading="lazy"
                 >
@@ -1154,10 +1154,7 @@ ul { list-style: none; }
     ---------------------------------------------------------- */
     const heroBg = document.getElementById('heroBg');
     const img = new Image();
-    img.src = heroBg.style.backgroundImage
-        ? heroBg.style.backgroundImage.slice(5, -2)
-        : 'https://images.unsplash.com/photo-1486297847374-9b5090313737?auto=format&fit=crop&w=1920&q=80';
-
+    img.src = 'images/hero.jpg';
     heroBg.style.backgroundImage = `url('${img.src}')`;
     img.onload = () => heroBg.classList.add('loaded');
 
