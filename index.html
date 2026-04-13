@@ -600,20 +600,26 @@ ul { list-style: none; }
 .gallery__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
     gap: 12px;
 }
 
 .gallery__item {
     overflow: hidden;
     border-radius: var(--radius);
-    aspect-ratio: 4/3;
     background: var(--beige);
+    height: 260px;
 }
 
 .gallery__item:first-child {
-    grid-column: span 2;
-    aspect-ratio: unset;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    height: 340px;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+    height: 340px;
 }
 
 .gallery__item img {
@@ -849,7 +855,7 @@ ul { list-style: none; }
     <div class="hero__overlay"></div>
 
     <div class="hero__content">
-        <p class="hero__eyebrow fade-in"> &middot; HANDMADE &middot; </p>
+        <p class="hero__eyebrow fade-in">Artisanal &middot; Handcrafted &middot; Premium</p>
         <h1 class="hero__title fade-in delay-1">Château<br>de Fromage</h1>
         <p class="hero__slogan fade-in delay-2">Handwerk, das man schmeckt.</p>
         <div class="hero__divider fade-in delay-2"></div>
@@ -886,7 +892,7 @@ ul { list-style: none; }
                 <p class="label fade-in">Unsere Philosophie</p>
                 <h2 class="section-title fade-in delay-1">Einfach.<br>Ehrlich.<br>Handgemacht.</h2>
                 <blockquote class="about__quote fade-in delay-2">
-                    „Aus wenigen Zutaten das Beste herausholen - das ist unser Anspruch."
+                    „Aus wenigen Zutaten das Beste herausholen — das ist unser Anspruch."
                 </blockquote>
                 <p class="section-intro fade-in delay-3">
                     Bei Château de Fromage steht die Herstellung von Käse im Mittelpunkt. Mit einfachen Zutaten und viel Sorgfalt entsteht ein Produkt, das durch Frische und Qualität überzeugt. Der Fokus liegt auf sauberem Arbeiten, Geduld und dem Anspruch, aus wenigen Zutaten das Beste herauszuholen.
@@ -975,7 +981,7 @@ ul { list-style: none; }
 
         <p class="process__intro fade-in">
             Die Herstellung von Mozzarella basiert auf dem Zusammenspiel von Temperatur,
-            Säure und sorgfältiger Handarbeit - Schritt für Schritt.
+            Säure und sorgfältiger Handarbeit — Schritt für Schritt.
         </p>
 
         <div class="process__grid">
@@ -985,7 +991,7 @@ ul { list-style: none; }
                 <div class="step__num">01</div>
                 <p class="step__label">Vorbereitung</p>
                 <h3 class="step__title">Milch &amp; Zitronensäure</h3>
-                <p class="step__desc">Pasteurisierte Vollmilch wird in einen Topf gegeben. Zitronensäure wird in Wasser aufgelöst und zur Milch hinzugefügt, dadurch steigt der Säuregehalt, was für die spätere Gerinnung entscheidend ist.</p>
+                <p class="step__desc">Pasteurisierte Vollmilch wird in einen Topf gegeben. Zitronensäure wird in Wasser aufgelöst und zur Milch hinzugefügt — dadurch steigt der Säuregehalt, was für die spätere Gerinnung entscheidend ist.</p>
             </div>
 
             <!-- 02 -->
@@ -1020,7 +1026,7 @@ ul { list-style: none; }
                 <div class="step__num">05</div>
                 <p class="step__label">Trennen</p>
                 <h3 class="step__title">Molke abtrennen</h3>
-                <p class="step__desc">Der Käsebruch wird mithilfe eines Tuchs oder Siebs von der Molke getrennt. Die überschüssige Flüssigkeit wird leicht ausgedrückt, übrig bleibt die kompakte Käsemasse.</p>
+                <p class="step__desc">Der Käsebruch wird mithilfe eines Tuchs oder Siebs von der Molke getrennt. Die überschüssige Flüssigkeit wird leicht ausgedrückt — übrig bleibt die kompakte Käsemasse.</p>
             </div>
 
             <!-- 06 -->
